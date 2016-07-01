@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.waylen.schoolstudent" >
+    <!--<uses-permission android:name="android.permission.INTERNET"/>-->
+    <!--<uses-permission android:name="android.permission.RECORD_AUDIO"/>-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".StaticData.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <!--android:name=".Myactivity.ManLogin"-->
+        <activity
+            android:name=".Myactivity.ManLogin"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Myactivity.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Notify_Message" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Work_All" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Work_Good" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Work_Detail" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Adress_Grade" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Adress_Class" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Adress_StudentOrTeacher" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Adress_StudentOrTeacher_Data" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Person_Set" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Person_Set_System" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Person_Set_Idea" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Person_Set_Change" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Person_ChangeData" android:screenOrientation="portrait"/>
+        <activity android:name=".Myactivity.Person_MyWork" android:screenOrientation="portrait"/>
+        <!--<activity android:name=".Myactivity.ManLogin" android:screenOrientation="portrait"/>-->
+        <activity android:name="com.chivox.chivoxdemo.MainActivity" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
